@@ -1,6 +1,3 @@
-from dotenv import load_dotenv
-from langchain_google_vertexai import VertexAIEmbeddings
-from langchain_postgres import PGVector
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
 from vecter_store import Vecter_Store
