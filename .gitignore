@@ -28,3 +28,6 @@ __pycache__/
 # OS生成ファイル
 .DS_Store
 Thumbs.db
+
+# 要件定義書
+.要件定義書.md
