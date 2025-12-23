@@ -5,7 +5,7 @@
 ## 主な機能
 - Markdown ドキュメントの分割（見出し単位）→埋め込み→PGVector（Postgres+pgvector）へ格納
 - LangChain を使った Retriever + Vertex AI（Gemini）による生成
-- ターミナル対話型チャットインターフェース
+- WEBブラウザ上対話型チャット
 
 ## 前提条件
 - Python 3.10+
@@ -49,3 +49,37 @@ python ./App/main.py
 
 ## 諸注意
 - 機密情報は `.Secret/` と `.env` に置き、`.gitignore` に含めること
+
+## Frontend
+
+### 主な技術
+- TypeScript
+- React
+- Vite
+
+### セットアップ
+1. 必要なパッケージをインストール
+```bash
+cd Frontend
+npm install
+```
+
+2. 開発サーバーを起動
+```bash
+npm run dev
+```
+
+3. ビルド
+```bash
+npm run build
+```
+
+### 構成
+- `src/` : 主なソースコード
+  - `main.tsx` : エントリーポイント
+  - `Chat.tsx` : チャットコンポーネント
+- `public/` : 公開用静的ファイル
+
+### 注意点
+- ESLint と Prettier を使用してコード品質を維持
+- `vite.config.ts` でプロジェクト設定を管理

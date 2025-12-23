@@ -21,7 +21,7 @@ prompt = """
 
 # retriever を正しく取得
 retriever = vector_store.get_retriever()
-llm = ChatVertexAI(model="gemini-2.5-flash")
+llm = ChatVertexAI(model="gemini-3-pro-preview")
 prompt_template = PromptTemplate.from_template(prompt)
 
 # RAG チェーンを構築
